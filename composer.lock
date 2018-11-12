@@ -611,12 +611,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-validate.git",
-                "reference": "0c9bf5b9f2070d2f2128f4d92b6ea4e2b15863f4"
+                "reference": "7524c8e9f49a1477b358d12b61a7793aaddc92bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/inhere/php-validate/zipball/0c9bf5b9f2070d2f2128f4d92b6ea4e2b15863f4",
-                "reference": "0c9bf5b9f2070d2f2128f4d92b6ea4e2b15863f4",
+                "url": "https://api.github.com/repos/inhere/php-validate/zipball/7524c8e9f49a1477b358d12b61a7793aaddc92bb",
+                "reference": "7524c8e9f49a1477b358d12b61a7793aaddc92bb",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -654,7 +654,7 @@
                 "library",
                 "validate"
             ],
-            "time": "2018-08-24T13:52:00+00:00"
+            "time": "2018-09-18T03:34:40+00:00"
         },
         {
             "name": "inhere/process",
@@ -702,12 +702,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-server.git",
-                "reference": "53a1659af6a1de02bf63d3a0fcca19ed2f81d936"
+                "reference": "68edf4dd7d7cc1aac581a872ef3feb026d7ebeb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/inhere/php-server/zipball/53a1659af6a1de02bf63d3a0fcca19ed2f81d936",
-                "reference": "53a1659af6a1de02bf63d3a0fcca19ed2f81d936",
+                "url": "https://api.github.com/repos/inhere/php-server/zipball/68edf4dd7d7cc1aac581a872ef3feb026d7ebeb4",
+                "reference": "68edf4dd7d7cc1aac581a872ef3feb026d7ebeb4",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -755,7 +755,7 @@
                 "udp",
                 "websocket"
             ],
-            "time": "2018-05-06T16:11:37+00:00"
+            "time": "2018-09-03T09:15:28+00:00"
         },
         {
             "name": "inhere/simple-active-record",
@@ -1417,12 +1417,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swoole-kit/context.git",
-                "reference": "e168e96cac9dcce92953df661c6f74eb083cd8d4"
+                "reference": "a2be26a1402ac6b2b43c21572683af7b6ad1d920"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swoole-kit/context/zipball/e168e96cac9dcce92953df661c6f74eb083cd8d4",
-                "reference": "e168e96cac9dcce92953df661c6f74eb083cd8d4",
+                "url": "https://api.github.com/repos/swoole-kit/context/zipball/a2be26a1402ac6b2b43c21572683af7b6ad1d920",
+                "reference": "a2be26a1402ac6b2b43c21572683af7b6ad1d920",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1463,7 +1463,7 @@
                 "php",
                 "tool"
             ],
-            "time": "2018-04-30T15:40:27+00:00"
+            "time": "2018-09-03T08:49:43+00:00"
         },
         {
             "name": "swoole-kit/http-server",
@@ -1471,12 +1471,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swoole-kit/http-server.git",
-                "reference": "62a91e85660fda8534ed5254c830c1250f58e13b"
+                "reference": "55a756a9f0b50cc75488ed63c72652f24c5df47f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swoole-kit/http-server/zipball/62a91e85660fda8534ed5254c830c1250f58e13b",
-                "reference": "62a91e85660fda8534ed5254c830c1250f58e13b",
+                "url": "https://api.github.com/repos/swoole-kit/http-server/zipball/55a756a9f0b50cc75488ed63c72652f24c5df47f",
+                "reference": "55a756a9f0b50cc75488ed63c72652f24c5df47f",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1519,7 +1519,7 @@
                 "php",
                 "tool"
             ],
-            "time": "2018-04-30T15:52:25+00:00"
+            "time": "2018-09-03T09:06:59+00:00"
         },
         {
             "name": "swoole-kit/utils",
@@ -1582,12 +1582,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/swoole-kit/websocket-server.git",
-                "reference": "7a890e3ebd84201f588ac7df55e941268507f96b"
+                "reference": "778b54ede0a4592eeccbdac23b58ed15684a11b7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swoole-kit/websocket-server/zipball/7a890e3ebd84201f588ac7df55e941268507f96b",
-                "reference": "7a890e3ebd84201f588ac7df55e941268507f96b",
+                "url": "https://api.github.com/repos/swoole-kit/websocket-server/zipball/778b54ede0a4592eeccbdac23b58ed15684a11b7",
+                "reference": "778b54ede0a4592eeccbdac23b58ed15684a11b7",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1634,7 +1634,7 @@
                 "udp",
                 "websocket"
             ],
-            "time": "2018-04-30T15:56:22+00:00"
+            "time": "2018-09-03T09:13:54+00:00"
         },
         {
             "name": "symfony/process",
