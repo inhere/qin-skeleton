@@ -29,8 +29,8 @@
     "inhere/php-validate": "dev-master as 2.0",
     "inhere/simple-active-record": "dev-master",
     "inhere/process": "dev-master",
-    "inhere/server": "dev-master",
     "inhere/code-generator": "dev-master",
+    "swokit/server": "dev-master",
     "swokit/context": "dev-master as 1.0",
     "swokit/http-server": "dev-master",
     "swokit/websocket-server": "dev-master",
@@ -42,8 +42,7 @@
   },
   "require-dev": {
     "inhere/simple-print-tool": "dev-master",
-    "ulue/annotations": "dev-master",
-    "zircote/swagger-php": "^2.0"
+    "ulue/annotations": "dev-master"
   },
   "autoload": {
     "files": [
@@ -56,7 +55,7 @@
   "repositories": {
     "packagist": {
       "type": "composer",
-      "url": "https://packagist.laravel-china.org"
+      "url": "https://packagist.phpcomposer.com"
     },
     "0": {
       "type": "git",

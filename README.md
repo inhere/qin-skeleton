@@ -75,6 +75,13 @@ swagger-ui 下载
 
 ### 文档生成
 
+安装 zircote/swagger-php
+
+```bash
+composer global require zircote/swagger-php // 全局
+composer require --dev zircote/swagger-php // 当前项目
+```
+
 ```sh
 // 扫描当前文件夹下所有目录
 vendor/bin/swagger --output web/docs
@@ -132,16 +139,6 @@ php5
 php5 $(which codecept5.phar) run --steps [--no-ansi -vvv]
 // 只运行单元测试
 php5 $(which codecept5.phar) run unit
-```
-
-## MongoDb
-
-phalcon 自带了操作类，不过是基于扩展 `mongo` (不再维护了)
-
-若需要用较新的驱动，可以安装扩展 `mongodb`. 再安装php库 `mongodb/mongodb` 辅助使用。
-
-```bash
-composer require mongodb/mongodb
 ```
 
 ## License
