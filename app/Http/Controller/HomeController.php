@@ -57,7 +57,7 @@ class HomeController extends HttpController
      */
     public function routes($ctx)
     {
-        /** @var \Inhere\Route\ORouter $router */
+        /** @var \Inhere\Route\Router $router */
         $router = \Mco::$di->get('router');
 
         // Setting a header

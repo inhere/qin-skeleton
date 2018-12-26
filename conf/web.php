@@ -4,7 +4,7 @@
  */
 
 use Toolkit\ArrUtil\Arr;
-use Inhere\Route\ORouter;
+use Inhere\Route\Router;
 
 return Arr::merge(require __DIR__ . '/config.php', [
     'application' => [
@@ -35,7 +35,7 @@ return Arr::merge(require __DIR__ . '/config.php', [
          */
 
         'router' => [
-            'class' => ORouter::class,
+            'class' => Router::class,
             'config' => [
                 'ignoreLastSep' => true,
                 'tmpCacheNumber' => 200,

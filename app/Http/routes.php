@@ -7,7 +7,7 @@
  * Template: res/templates/routes.stub
  *
  * @notice Please don't edit this file, it is auto-generated.
- * @var \Inhere\Route\ORouter $router
+ * @var \Inhere\Route\Router $router
  */
 
 $router->get('/', \App\Http\Controller\HomeController::class);

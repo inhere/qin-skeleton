@@ -12,7 +12,7 @@ use App\Listener\AppListener;
 use App\Provider\CommonServiceProvider;
 use App\Provider\ConsoleServiceProvider;
 use App\Provider\WebServiceProvider;
-use Inhere\Route\ORouter;
+use Inhere\Route\Router;
 use Mco\Component\EnvDetector;
 use Toolkit\PhpUtil\PhpDotEnv;
 use Mco\Http\App as WebApp;
@@ -124,9 +124,9 @@ class Bootstrap
     }
 
     /**
-     * @param ORouter $router
+     * @param Router $router
      */
-    private function loadWebRoutes(ORouter $router)
+    private function loadWebRoutes(Router $router)
     {
         include BASE_PATH . '/app/Http/routes.php';
     }

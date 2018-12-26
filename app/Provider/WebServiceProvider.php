@@ -10,7 +10,7 @@ namespace App\Provider;
 
 use Toolkit\DI\Container;
 use Toolkit\DI\ServiceProviderInterface;
-use Inhere\Route\ORouter;
+use Inhere\Route\Router;
 
 /**
  * Class WebServiceProvider
