@@ -9,7 +9,9 @@
 namespace App\Console\Controller;
 
 use Inhere\Console\Controller;
-use Mco\Server\AppServer;
+use Mco\Http\App;
+use Swokit\Http\Server\HttpServer;
+use Swokit\Server\Server;
 
 /**
  * Class ServerController
@@ -21,12 +23,13 @@ class ServerController extends Controller
     protected static $description = 'manage the swoole application server runtime. [<info>built in</info>]';
 
     /**
-     * @return AppServer
+     * @return Server
      */
     protected function createServer()
     {
-        /** @var AppServer $server */
-        require BASE_PATH . '/src/boot/server.php';
+        // require BASE_PATH . '/src/boot/server.php';
+        $server = new HttpServer();
+        $server->setRequestHandler(new App());
 
         return $server;
     }
@@ -87,6 +90,7 @@ class ServerController extends Controller
      * restart the application server
      * @options
      *  -d, --daemon  run app server on the background
+     * @throws \Throwable
      */
     public function restartCommand()
     {

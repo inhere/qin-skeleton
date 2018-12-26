@@ -5,13 +5,28 @@
  */
 
 use App\Console\Controller\ServerController;
-use Inhere\Console\Application;
+// use Inhere\Console\Application;
 
 define('BASE_PATH', dirname(__DIR__));
 define('IN_SWOOLE', true);
 
 require dirname(__DIR__) . '/vendor/autoload.php';
 
+$input = new \Inhere\Console\IO\Input();
+$group = new ServerController($input, new \Inhere\Console\IO\Output());
+$group->setExecutionAlone();
+
+try {
+  exit($group->run($input->getCommand()));
+} catch (\Exception $e) {
+  $message = \Toolkit\Cli\Color::apply('error', $e->getMessage());
+
+  echo sprintf("%s\nFile %s:%d\nTrace:\n%s\n",
+    $message, $e->getFile(), $e->getLine(), $e->getTraceAsString()
+  );
+}
+
+/*
 $app = new Application();
 
 // register
@@ -21,3 +36,4 @@ $app->controller('server', ServerController::class);
 $status = $app->runAction('server', $app->getInput()->getCommand(), true, true);
 
 $app->stop($status);
+*/

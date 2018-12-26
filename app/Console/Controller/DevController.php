@@ -28,6 +28,7 @@ class DevController extends Controller
      *  -S         The server address. e.g 127.0.0.1:5577
      *  -H,--host  The server host address. e.g 127.0.0.1
      *  -p,--port  The server host address. e.g 5577
+     * @throws \ReflectionException
      */
     public function serveCommand()
     {
