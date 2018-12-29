@@ -4,108 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7d98bae7ed5d02980b657dcfc223b5fc",
+    "content-hash": "42bf0a55f10adbd75f09108b7654457e",
     "packages": [
-        {
-            "name": "guzzlehttp/promises",
-            "version": "v1.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/guzzle/promises.git",
-                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
-                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5.0"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^4.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.4-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "GuzzleHttp\\Promise\\": "src/"
-                },
-                "files": [
-                    "src/functions_include.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Michael Dowling",
-                    "email": "mtdowling@gmail.com",
-                    "homepage": "https://github.com/mtdowling"
-                }
-            ],
-            "description": "Guzzle promises library",
-            "keywords": [
-                "promise"
-            ],
-            "time": "2016-12-20T10:07:11+00:00"
-        },
-        {
-            "name": "inhere/asset-manager",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/inhere/php-asset-manager.git",
-                "reference": "0995dc5a83af02e53a437884e00c28395d6ec734"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/inhere/php-asset-manager/zipball/0995dc5a83af02e53a437884e00c28395d6ec734",
-                "reference": "0995dc5a83af02e53a437884e00c28395d6ec734",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">7.0.0",
-                "toolkit/file-utils": "~1.0"
-            },
-            "suggest": {
-                "matthiasmullie/minify": "compress css and js. if you want to compress assets."
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Inhere\\Assets\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
-                }
-            ],
-            "description": "a php asset manager library.",
-            "homepage": "https://github.com/inhere/php-asset-manager",
-            "keywords": [
-                "JS",
-                "asset",
-                "asset-manager",
-                "css",
-                "library"
-            ],
-            "time": "2018-05-01T15:03:15+00:00"
-        },
         {
             "name": "inhere/code-generator",
             "version": "dev-master",
@@ -160,16 +60,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-console.git",
-                "reference": "085780b03fe5af0e24cac3ae871e4b38c11c9838"
+                "reference": "f162bae51b812d78a6b178a4959813c08f240500"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/inhere/php-console/zipball/085780b03fe5af0e24cac3ae871e4b38c11c9838",
-                "reference": "085780b03fe5af0e24cac3ae871e4b38c11c9838",
+                "url": "https://api.github.com/repos/inhere/php-console/zipball/f162bae51b812d78a6b178a4959813c08f240500",
+                "reference": "f162bae51b812d78a6b178a4959813c08f240500",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0.0",
+                "php": ">7.0.0",
                 "toolkit/cli-utils": "~1.0",
                 "toolkit/sys-utils": "~1.0"
             },
@@ -206,7 +106,7 @@
                 "console-color",
                 "library"
             ],
-            "time": "2018-07-18T16:09:56+00:00"
+            "time": "2018-12-29T01:45:47+00:00"
         },
         {
             "name": "inhere/database",
@@ -301,66 +201,17 @@
             "time": "2017-12-29T15:25:06+00:00"
         },
         {
-            "name": "inhere/http",
-            "version": "v1.2.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/inhere/php-http.git",
-                "reference": "e0c34c88cb502d63ceb1f4603ea53f6b1360a877"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/inhere/php-http/zipball/e0c34c88cb502d63ceb1f4603ea53f6b1360a877",
-                "reference": "e0c34c88cb502d63ceb1f4603ea53f6b1360a877",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">7.0.0",
-                "psr/http-message": "^1.0"
-            },
-            "suggest": {
-                "inhere/console": "a lightweight php console application library.",
-                "inhere/php-validate": "Very lightweight data validate tool"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Inhere\\Http\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
-                }
-            ],
-            "description": "some useful http message library of the php",
-            "homepage": "https://github.com/inhere/php-http",
-            "keywords": [
-                "curl",
-                "http",
-                "library",
-                "tool"
-            ],
-            "time": "2018-06-10T11:58:16+00:00"
-        },
-        {
             "name": "inhere/library",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-librarys.git",
-                "reference": "cdef3b369eebc3d97c54bfa5e69fcb9def0112d6"
+                "reference": "e6ca598685469794f310e3ab0e2bc19519cd0ae6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/inhere/php-librarys/zipball/cdef3b369eebc3d97c54bfa5e69fcb9def0112d6",
-                "reference": "cdef3b369eebc3d97c54bfa5e69fcb9def0112d6",
+                "url": "https://api.github.com/repos/inhere/php-librarys/zipball/e6ca598685469794f310e3ab0e2bc19519cd0ae6",
+                "reference": "e6ca598685469794f310e3ab0e2bc19519cd0ae6",
                 "shasum": ""
             },
             "require": {
@@ -401,125 +252,30 @@
                 "php",
                 "tool"
             ],
-            "time": "2018-01-29T06:31:48+00:00"
-        },
-        {
-            "name": "inhere/lite-cache",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-comp/lite-cache.git",
-                "reference": "494c157a5a447a10d7c404cf45cd6845c4a85a52"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-comp/lite-cache/zipball/494c157a5a447a10d7c404cf45cd6845c4a85a52",
-                "reference": "494c157a5a447a10d7c404cf45cd6845c4a85a52",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0.0",
-                "psr/simple-cache": "^1.0",
-                "toolkit/data-parser": "^1.0"
-            },
-            "suggest": {
-                "inhere/simple-print-tool": "Very lightweight data printing tools"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Inhere\\LiteCache\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
-                }
-            ],
-            "description": "a simple cache client tool library of the php",
-            "homepage": "https://github.com/inhere/php-lite-cache",
-            "keywords": [
-                "library",
-                "memcache",
-                "redis"
-            ],
-            "time": "2018-09-25T08:24:45+00:00"
-        },
-        {
-            "name": "inhere/lite-db",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/inhere/php-lite-database.git",
-                "reference": "33cc6ab33041a5b8a1665b8ceecfc0db500448c7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/inhere/php-lite-database/zipball/33cc6ab33041a5b8a1665b8ceecfc0db500448c7",
-                "reference": "33cc6ab33041a5b8a1665b8ceecfc0db500448c7",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">7.0.0"
-            },
-            "suggest": {
-                "inhere/simple-print-tool": "Very lightweight data printing tools"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Inhere\\LiteDb\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
-                }
-            ],
-            "description": "a simple db tool library of the php",
-            "homepage": "https://github.com/inhere/php-web-library",
-            "keywords": [
-                "database",
-                "library",
-                "mongo",
-                "mysql",
-                "pdo",
-                "query"
-            ],
-            "time": "2018-06-13T16:12:14+00:00"
+            "time": "2018-12-26T15:44:41+00:00"
         },
         {
             "name": "inhere/middleware",
-            "version": "v1.0.2",
+            "version": "v1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-middleware.git",
-                "reference": "544aa51e8028e04619d9b359d73a8978d30f7a88"
+                "reference": "c17fda1a05fc5f3e2dc7cc34df2cfcf052993368"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/inhere/php-middleware/zipball/544aa51e8028e04619d9b359d73a8978d30f7a88",
-                "reference": "544aa51e8028e04619d9b359d73a8978d30f7a88",
+                "url": "https://api.github.com/repos/inhere/php-middleware/zipball/c17fda1a05fc5f3e2dc7cc34df2cfcf052993368",
+                "reference": "c17fda1a05fc5f3e2dc7cc34df2cfcf052993368",
                 "shasum": ""
             },
             "require": {
-                "php": ">7.0.0",
+                "php": ">7.1.0",
                 "psr/http-server-middleware": "^1.0"
             },
+            "require-dev": {
+                "inhere/http": "^1.0"
+            },
             "suggest": {
-                "inhere/console": "a lightweight php console application library.",
                 "inhere/php-validate": "Very lightweight data validate tool library",
                 "inhere/sroute": "Very lightweight and fast router"
             },
@@ -549,7 +305,7 @@
                 "psr-15",
                 "psr-7"
             ],
-            "time": "2018-03-31T06:01:52+00:00"
+            "time": "2018-12-26T16:02:37+00:00"
         },
         {
             "name": "inhere/php-validate",
@@ -637,76 +393,21 @@
             "time": "2018-05-06T08:55:12+00:00"
         },
         {
-            "name": "inhere/simple-active-record",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/inhere/php-simple-activeRecord.git",
-                "reference": "319a4c297f0f5d38c9af8fb70da461f1bfd5c67a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/inhere/php-simple-activeRecord/zipball/319a4c297f0f5d38c9af8fb70da461f1bfd5c67a",
-                "reference": "319a4c297f0f5d38c9af8fb70da461f1bfd5c67a",
-                "shasum": ""
-            },
-            "require": {
-                "inhere/lite-db": "dev-master",
-                "inhere/php-validate": "^2.0",
-                "php": ">=7.0.0",
-                "psr/log": "~1.0",
-                "toolkit/collection": "~1.0"
-            },
-            "suggest": {
-                "inhere/console": "a lightweight php console application library.",
-                "inhere/event": "the event manager",
-                "inhere/http": "Very lightweight PSR-7 implements http message component",
-                "inhere/sroute": "Very fast php router"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "SimpleAR\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
-                }
-            ],
-            "description": "a simple activeRecord library of the php",
-            "homepage": "https://github.com/inhere/php-simple-activeRecord",
-            "keywords": [
-                "activerecord",
-                "library",
-                "pdo",
-                "php",
-                "tool"
-            ],
-            "time": "2018-07-07T04:58:41+00:00"
-        },
-        {
             "name": "inhere/sroute",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-srouter.git",
-                "reference": "7a69cf44e00899528e22f5f968e7f8baa024452a"
+                "reference": "77c8ffb919c12cc84325425aab8c98e4dbef692f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/inhere/php-srouter/zipball/7a69cf44e00899528e22f5f968e7f8baa024452a",
-                "reference": "7a69cf44e00899528e22f5f968e7f8baa024452a",
+                "url": "https://api.github.com/repos/inhere/php-srouter/zipball/77c8ffb919c12cc84325425aab8c98e4dbef692f",
+                "reference": "77c8ffb919c12cc84325425aab8c98e4dbef692f",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0"
+                "php": ">7.1.0"
             },
             "suggest": {
                 "inhere/simple-print-tool": "Very lightweight data printing tools"
@@ -731,7 +432,7 @@
                     "homepage": "http://www.yzone.net/"
                 }
             ],
-            "description": "a very lightweight and fasted router.",
+            "description": "a very lightweight and fasted request router.",
             "homepage": "https://github.com/inhere/php-srouter",
             "keywords": [
                 "library",
@@ -739,7 +440,7 @@
                 "route",
                 "router"
             ],
-            "time": "2018-09-03T07:40:37+00:00"
+            "time": "2018-12-16T16:39:45+00:00"
         },
         {
             "name": "mcophp/mco",
@@ -747,23 +448,26 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mcophp/mco.git",
-                "reference": "a738a3dcde5479383cf5c35ffc9be0572f180fd7"
+                "reference": "d9e6da996aa4220ff6267cb4e90e6366f099fd40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mcophp/mco/zipball/a738a3dcde5479383cf5c35ffc9be0572f180fd7",
-                "reference": "a738a3dcde5479383cf5c35ffc9be0572f180fd7",
+                "url": "https://api.github.com/repos/mcophp/mco/zipball/d9e6da996aa4220ff6267cb4e90e6366f099fd40",
+                "reference": "d9e6da996aa4220ff6267cb4e90e6366f099fd40",
                 "shasum": ""
             },
             "require": {
                 "inhere/console": "dev-master",
                 "inhere/event": "~1.0",
-                "inhere/http": "~1.0",
                 "inhere/middleware": "~1.0",
                 "inhere/php-validate": "~2.0",
                 "inhere/sroute": "dev-master",
                 "monolog/monolog": "^1.2",
                 "php": ">7.0.0",
+                "php-comp/http-message": "~1.0",
+                "php-comp/lite-activerecord": "dev-master",
+                "php-comp/lite-cache": "dev-master",
+                "php-comp/lite-db": "dev-master",
                 "toolkit/errors": "~1.0",
                 "toolkit/toolkit": "dev-master",
                 "toolkit/web-utils": "~1.0"
@@ -799,7 +503,7 @@
                 "psr-15",
                 "psr-7"
             ],
-            "time": "2018-10-15T07:18:05+00:00"
+            "time": "2018-12-27T17:17:21+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -923,6 +627,255 @@
                 "cn2pinyin"
             ],
             "time": "2017-07-10T07:20:01+00:00"
+        },
+        {
+            "name": "php-comp/asset-manager",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-comp/asset-manager.git",
+                "reference": "f2519521bd9321f29ea6a2a99df10602ed79ae8d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-comp/asset-manager/zipball/f2519521bd9321f29ea6a2a99df10602ed79ae8d",
+                "reference": "f2519521bd9321f29ea6a2a99df10602ed79ae8d",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">7.1",
+                "toolkit/file-utils": "~1.0"
+            },
+            "suggest": {
+                "matthiasmullie/minify": "compress css and js. if you want to compress assets."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpComp\\Assets\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "http://www.yzone.net/"
+                }
+            ],
+            "description": "a simple php asset manager library.",
+            "homepage": "https://github.com/php-comp/asset-manager",
+            "keywords": [
+                "JS",
+                "asset",
+                "asset-manager",
+                "css",
+                "library"
+            ],
+            "time": "2018-11-25T12:37:58+00:00"
+        },
+        {
+            "name": "php-comp/http-message",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-comp/http-message.git",
+                "reference": "351856b48981ed843c8f24f17cdaf46846049ff5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-comp/http-message/zipball/351856b48981ed843c8f24f17cdaf46846049ff5",
+                "reference": "351856b48981ed843c8f24f17cdaf46846049ff5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">7.0.0",
+                "psr/http-message": "^1.0"
+            },
+            "suggest": {
+                "inhere/console": "a lightweight php console application library.",
+                "inhere/php-validate": "Very lightweight data validate tool"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpComp\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "http://www.yzone.net/"
+                }
+            ],
+            "description": "http message library of the php, implement the PSR7",
+            "homepage": "https://github.com/php-comp/http-message",
+            "keywords": [
+                "http",
+                "library",
+                "psr7",
+                "tool"
+            ],
+            "time": "2018-11-12T05:08:58+00:00"
+        },
+        {
+            "name": "php-comp/lite-activerecord",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-comp/lite-activeRecord.git",
+                "reference": "2dbb617380d6b71e60df1d1160f301fe6df26ece"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-comp/lite-activeRecord/zipball/2dbb617380d6b71e60df1d1160f301fe6df26ece",
+                "reference": "2dbb617380d6b71e60df1d1160f301fe6df26ece",
+                "shasum": ""
+            },
+            "require": {
+                "inhere/php-validate": "^2.0",
+                "php": ">=7.0.0",
+                "php-comp/lite-db": "dev-master",
+                "psr/log": "~1.0",
+                "toolkit/collection": "~1.0"
+            },
+            "suggest": {
+                "inhere/console": "a lightweight php console application library.",
+                "inhere/sroute": "Very fast php router"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpComp\\LiteActiveRecord\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "http://www.yzone.net/"
+                }
+            ],
+            "description": "a simple activeRecord library of the php",
+            "homepage": "https://github.com/php-comp/lite-activeRecord",
+            "keywords": [
+                "activerecord",
+                "library",
+                "pdo",
+                "php",
+                "tool"
+            ],
+            "time": "2018-11-20T13:02:00+00:00"
+        },
+        {
+            "name": "php-comp/lite-cache",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-comp/lite-cache.git",
+                "reference": "4e7c828346097a524ee6e9c03fa6b1ef4fa3dd4a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-comp/lite-cache/zipball/4e7c828346097a524ee6e9c03fa6b1ef4fa3dd4a",
+                "reference": "4e7c828346097a524ee6e9c03fa6b1ef4fa3dd4a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">7.0.0",
+                "psr/simple-cache": "^1.0",
+                "toolkit/data-parser": "^1.0"
+            },
+            "suggest": {
+                "inhere/simple-print-tool": "Very lightweight data printing tools"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpComp\\LiteCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "http://www.yzone.net/"
+                }
+            ],
+            "description": "a simple cache client tool library of the php",
+            "homepage": "https://github.com/php-comp/lite-cache",
+            "keywords": [
+                "library",
+                "memcache",
+                "redis"
+            ],
+            "time": "2018-11-21T06:31:48+00:00"
+        },
+        {
+            "name": "php-comp/lite-db",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-comp/lite-database.git",
+                "reference": "af5f73cb89e0e6cd24dd464f7a48fb5088eaafca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-comp/lite-database/zipball/af5f73cb89e0e6cd24dd464f7a48fb5088eaafca",
+                "reference": "af5f73cb89e0e6cd24dd464f7a48fb5088eaafca",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">7.0.0"
+            },
+            "suggest": {
+                "inhere/simple-print-tool": "Very lightweight data printing tools"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpComp\\LiteDb\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "http://www.yzone.net/"
+                }
+            ],
+            "description": "a simple db tool library of the php",
+            "homepage": "https://github.com/php-comp/lite-database",
+            "keywords": [
+                "database",
+                "db",
+                "library",
+                "mongo",
+                "mysql",
+                "pdo",
+                "query"
+            ],
+            "time": "2018-11-21T06:12:57+00:00"
         },
         {
             "name": "psr/container",
@@ -1078,16 +1031,16 @@
         },
         {
             "name": "psr/http-server-middleware",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-server-middleware.git",
-                "reference": "ea17eb1fb2c8df6db919cc578451a8013c6a0ae5"
+                "reference": "2296f45510945530b9dceb8bcedb5cb84d40c5f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-server-middleware/zipball/ea17eb1fb2c8df6db919cc578451a8013c6a0ae5",
-                "reference": "ea17eb1fb2c8df6db919cc578451a8013c6a0ae5",
+                "url": "https://api.github.com/repos/php-fig/http-server-middleware/zipball/2296f45510945530b9dceb8bcedb5cb84d40c5f5",
+                "reference": "2296f45510945530b9dceb8bcedb5cb84d40c5f5",
                 "shasum": ""
             },
             "require": {
@@ -1127,20 +1080,20 @@
                 "request",
                 "response"
             ],
-            "time": "2018-01-22T17:08:31+00:00"
+            "time": "2018-10-30T17:12:04+00:00"
         },
         {
             "name": "psr/log",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
-                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
+                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
                 "shasum": ""
             },
             "require": {
@@ -1174,7 +1127,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10T12:19:37+00:00"
+            "time": "2018-11-20T15:27:04+00:00"
         },
         {
             "name": "psr/simple-cache",
@@ -1225,175 +1178,26 @@
             "time": "2017-10-23T01:57:42+00:00"
         },
         {
-            "name": "swokit/context",
+            "name": "swokit/swokit",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/swokit/context.git",
-                "reference": "b7217024f5f9e14df6d608aa496a19c97e9dc95c"
+                "url": "https://github.com/swokit/swokit.git",
+                "reference": "d893d128d83042c72ec5eb65b17c5c93d0865bcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/swokit/context/zipball/b7217024f5f9e14df6d608aa496a19c97e9dc95c",
-                "reference": "b7217024f5f9e14df6d608aa496a19c97e9dc95c",
-                "shasum": ""
-            },
-            "require": {
-                "inhere/http": "^1.0.0",
-                "php": ">7.0.0"
-            },
-            "suggest": {
-                "inhere/console": "a lightweight php console application library.",
-                "inhere/php-validate": "Very lightweight data validate tool"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "SwoKit\\Context\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
-                }
-            ],
-            "description": "some context tool library of the swoole",
-            "homepage": "https://github.com/swokit/context",
-            "keywords": [
-                "library",
-                "php",
-                "tool"
-            ],
-            "time": "2018-09-19T10:36:29+00:00"
-        },
-        {
-            "name": "swokit/http-server",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/swokit/http-server.git",
-                "reference": "b1c2ac28d80fa8ed3d254d2e472986cddd78332b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/swokit/http-server/zipball/b1c2ac28d80fa8ed3d254d2e472986cddd78332b",
-                "reference": "b1c2ac28d80fa8ed3d254d2e472986cddd78332b",
-                "shasum": ""
-            },
-            "require": {
-                "inhere/http": "^1.0",
-                "php": ">7.0.0",
-                "swokit/context": "~1.0",
-                "swokit/server": "dev-master"
-            },
-            "suggest": {
-                "inhere/console": "a lightweight php console application library.",
-                "inhere/php-validate": "Very lightweight data validate tool"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "SwoKit\\Http\\Server\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
-                }
-            ],
-            "description": "some http server tool library of the swoole",
-            "homepage": "https://github.com/swokit/http-server",
-            "keywords": [
-                "library",
-                "php",
-                "tool"
-            ],
-            "time": "2018-10-10T15:11:41+00:00"
-        },
-        {
-            "name": "swokit/server",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/swokit/server.git",
-                "reference": "d360b7184fffc1bede7f9519abf9d15d0f0ef0d9"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/swokit/server/zipball/d360b7184fffc1bede7f9519abf9d15d0f0ef0d9",
-                "reference": "d360b7184fffc1bede7f9519abf9d15d0f0ef0d9",
+                "url": "https://api.github.com/repos/swokit/swokit/zipball/d893d128d83042c72ec5eb65b17c5c93d0865bcb",
+                "reference": "d893d128d83042c72ec5eb65b17c5c93d0865bcb",
                 "shasum": ""
             },
             "require": {
                 "inhere/console": "dev-master",
-                "php": ">7.0.0",
-                "swokit/utils": "~1.0"
-            },
-            "suggest": {
-                "ext-swoole": "The swoole extension is required for running"
-            },
-            "type": "library",
-            "autoload": {
-                "files": [
-                    "src/Helper/functions.php"
-                ],
-                "psr-4": {
-                    "Inhere\\Server\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
-                }
-            ],
-            "description": "a php server manager powered by swoole",
-            "homepage": "https://github.com/swokit/server",
-            "keywords": [
-                "http",
-                "library",
-                "server",
-                "swoole",
-                "tcp",
-                "udp",
-                "websocket"
-            ],
-            "time": "2018-09-20T06:02:33+00:00"
-        },
-        {
-            "name": "swokit/utils",
-            "version": "v1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/swokit/utils.git",
-                "reference": "3186dfca29493696e1c562466b3d2a8a200a2354"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/swokit/utils/zipball/3186dfca29493696e1c562466b3d2a8a200a2354",
-                "reference": "3186dfca29493696e1c562466b3d2a8a200a2354",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.0.0",
+                "php": ">7.1.0",
+                "php-comp/http-message": "~1.0",
+                "psr/log": "^1.0",
                 "toolkit/php-utils": "~1.0",
+                "toolkit/pool": "~1.0",
                 "toolkit/sys-utils": "~1.0"
             },
             "suggest": {
@@ -1401,10 +1205,26 @@
                 "inhere/php-validate": "Very lightweight data validate tool"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
-                    "SwooleKit\\Util\\": "src/"
-                }
+                    "Swokit\\Pool\\": "libs/conn-pool/src/",
+                    "Swokit\\Server\\": "libs/server/src/",
+                    "Swokit\\Rpc\\Server\\": "libs/rpc-server/src/",
+                    "Swokit\\Rpc\\Client\\": "libs/rpc-client/src/",
+                    "Swokit\\Http\\Server\\": "libs/http-server/src/",
+                    "Swokit\\WebSocket\\Server\\": "libs/websocket-server/src/",
+                    "Swokit\\Process\\": "libs/process/src/",
+                    "Swokit\\Task\\": "libs/task/src/",
+                    "Swokit\\Util\\": "libs/utils/src/"
+                },
+                "files": [
+                    "src/cache/src/Helper/Functions.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1417,81 +1237,29 @@
                     "homepage": "http://www.yzone.net/"
                 }
             ],
-            "description": "some utils tool library of the swoole",
-            "homepage": "https://github.com/swoole-kit/utils",
+            "description": "some utils tool library for the php swoole ext",
+            "homepage": "https://github.com/swokit/swokit",
             "keywords": [
                 "library",
                 "php",
+                "swokit",
+                "swoole",
                 "tool"
             ],
-            "time": "2018-06-16T09:40:45+00:00"
-        },
-        {
-            "name": "swokit/websocket-server",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/swokit/websocket-server.git",
-                "reference": "387efe965af525fd3317795b7b05f39a22f78790"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/swokit/websocket-server/zipball/387efe965af525fd3317795b7b05f39a22f78790",
-                "reference": "387efe965af525fd3317795b7b05f39a22f78790",
-                "shasum": ""
-            },
-            "require": {
-                "inhere/http": "~1.0",
-                "php": ">=7.0.0",
-                "swokit/context": "^1.0",
-                "swokit/server": "dev-master",
-                "swokit/utils": "^1.0"
-            },
-            "suggest": {
-                "ext-swoole": "The swoole extension is required for running"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "SwoKit\\WebSocket\\Server\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "inhere",
-                    "email": "in.798@qq.com",
-                    "homepage": "http://www.yzone.net/"
-                }
-            ],
-            "description": "a php websocket server manager powered by swoole",
-            "homepage": "https://github.com/inhere/swokit/websocket-server",
-            "keywords": [
-                "http",
-                "library",
-                "server",
-                "swoole",
-                "tcp",
-                "udp",
-                "websocket"
-            ],
-            "time": "2018-10-09T15:17:05+00:00"
+            "time": "2018-12-26T15:35:18+00:00"
         },
         {
             "name": "symfony/process",
-            "version": "v3.4.18",
+            "version": "v3.4.20",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "35c2914a9f50519bd207164c353ae4d59182c2cb"
+                "reference": "abb46b909dd6ba0b50e10d4c10ffe6ee96dd70f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/35c2914a9f50519bd207164c353ae4d59182c2cb",
-                "reference": "35c2914a9f50519bd207164c353ae4d59182c2cb",
+                "url": "https://api.github.com/repos/symfony/process/zipball/abb46b909dd6ba0b50e10d4c10ffe6ee96dd70f2",
+                "reference": "abb46b909dd6ba0b50e10d4c10ffe6ee96dd70f2",
                 "shasum": ""
             },
             "require": {
@@ -1527,7 +1295,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2018-10-14T17:33:21+00:00"
+            "time": "2018-11-20T16:10:26+00:00"
         },
         {
             "name": "text/template",
@@ -1586,16 +1354,16 @@
         },
         {
             "name": "toolkit/errors",
-            "version": "v1.0.4",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-toolkit/errors.git",
-                "reference": "563a6ff6bd3c64ea8b1a6fde1f2b472e435ae1e1"
+                "reference": "f8803df4bdf1713b93999008811d2e750cfbb48d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-toolkit/errors/zipball/563a6ff6bd3c64ea8b1a6fde1f2b472e435ae1e1",
-                "reference": "563a6ff6bd3c64ea8b1a6fde1f2b472e435ae1e1",
+                "url": "https://api.github.com/repos/php-toolkit/errors/zipball/f8803df4bdf1713b93999008811d2e750cfbb48d",
+                "reference": "f8803df4bdf1713b93999008811d2e750cfbb48d",
                 "shasum": ""
             },
             "require": {
@@ -1632,7 +1400,52 @@
                 "php",
                 "tool"
             ],
-            "time": "2018-05-02T13:16:54+00:00"
+            "time": "2018-12-26T15:56:22+00:00"
+        },
+        {
+            "name": "toolkit/pool",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-toolkit/pool.git",
+                "reference": "cc96bb5bf4a3918b5438ad8ddc7529d914d48405"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-toolkit/pool/zipball/cc96bb5bf4a3918b5438ad8ddc7529d914d48405",
+                "reference": "cc96bb5bf4a3918b5438ad8ddc7529d914d48405",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">7.1"
+            },
+            "require-dev": {
+                "swokit/connection-pool": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Toolkit\\Pool\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "inhere",
+                    "email": "in.798@qq.com",
+                    "homepage": "http://www.yzone.net/"
+                }
+            ],
+            "description": "a simple resource pool library of the php",
+            "homepage": "http://github.com/php-toolkit/pool",
+            "keywords": [
+                "library",
+                "resource-pool"
+            ],
+            "time": "2018-12-12T15:24:18+00:00"
         },
         {
             "name": "toolkit/toolkit",
@@ -1640,12 +1453,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-toolkit/toolkit.git",
-                "reference": "b595712c0d2d2059afc98572d7530eec3b4e4182"
+                "reference": "6311a984626197754347d7bcbf2768f8b9732fd4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-toolkit/toolkit/zipball/b595712c0d2d2059afc98572d7530eec3b4e4182",
-                "reference": "b595712c0d2d2059afc98572d7530eec3b4e4182",
+                "url": "https://api.github.com/repos/php-toolkit/toolkit/zipball/6311a984626197754347d7bcbf2768f8b9732fd4",
+                "reference": "6311a984626197754347d7bcbf2768f8b9732fd4",
                 "shasum": ""
             },
             "require": {
@@ -1712,7 +1525,7 @@
                 "php",
                 "tools"
             ],
-            "time": "2018-10-15T09:00:50+00:00"
+            "time": "2018-12-26T15:45:59+00:00"
         },
         {
             "name": "toolkit/toolkit-plus",
@@ -1824,13 +1637,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/inhere/simple-print-tool/zipball/eea4a2069392fbe2a49089bd86fdb173957ba446",
                 "reference": "eea4a2069392fbe2a49089bd86fdb173957ba446",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": ">=5.6"
@@ -1876,13 +1683,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/ulue/Annotations/zipball/396d7c2883653702d9c2df88457488701a6010e1",
                 "reference": "396d7c2883653702d9c2df88457488701a6010e1",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://dl.laravel-china.org/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "shasum": ""
             },
             "require": {
                 "php": ">7.0.0",
@@ -1925,7 +1726,7 @@
             "alias": "1.0",
             "alias_normalized": "1.0.0.0",
             "version": "9999999-dev",
-            "package": "swokit/context"
+            "package": "toolkit/pool"
         },
         {
             "alias": "1.0",
@@ -1936,22 +1737,20 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "inhere/asset-manager": 20,
         "inhere/library": 20,
         "inhere/console": 20,
         "inhere/database": 20,
         "inhere/sroute": 20,
-        "inhere/lite-cache": 20,
-        "inhere/lite-db": 20,
         "mcophp/mco": 20,
-        "inhere/php-validate": 20,
-        "inhere/simple-active-record": 20,
-        "inhere/process": 20,
         "inhere/code-generator": 20,
-        "swokit/server": 20,
-        "swokit/context": 20,
-        "swokit/http-server": 20,
-        "swokit/websocket-server": 20,
+        "inhere/php-validate": 20,
+        "inhere/process": 20,
+        "php-comp/asset-manager": 20,
+        "php-comp/lite-cache": 20,
+        "php-comp/lite-db": 20,
+        "php-comp/lite-activerecord": 20,
+        "swokit/swokit": 20,
+        "toolkit/pool": 20,
         "toolkit/toolkit": 20,
         "toolkit/toolkit-plus": 20,
         "inhere/simple-print-tool": 20,
@@ -1960,7 +1759,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.0.0"
+        "php": ">7.1.0"
     },
     "platform-dev": []
 }
