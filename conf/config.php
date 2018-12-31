@@ -5,11 +5,28 @@
 return [
     'name'     => env('APP_NAME', 'My App'),
     'debug'    => env('APP_DEBUG', false),
-    'env'      => env('APP_ENV', 'pdt'),
+    'env'      => env('APP_ENV', 'prod'),
     'charset'  => 'UTF-8',
     'rootPath' => BASE_PATH,
 
+    'application' => [
+        'host'        => 'localhost',
+        'baseTitle'   => 'ArtFonts',
+        'description' => 'application description',
+        'keywords'    => 'application keywords',
+    ],
+
+    'displayErrorDetails'               => true,
+    'determineRouteBeforeAppMiddleware' => true,
+
+    'filterFavicon' => true,
     'enableCsrfToken' => true,
+
+    'response' => [
+        'chunkSize'              => 4096,
+        'httpVersion'            => '1.1',
+        'addContentLengthHeader' => false,
+    ],
 
     'errorRender' => [
         'displayErrorDetails' => true,
@@ -17,61 +34,12 @@ return [
         'hideRootPath'        => true,
     ],
 
-    'serviceProviders' => [
-        \App\Provider\CommonServiceProvider::class,
+    'assetUrls' => [
+        'jquery' => 'https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js',
+        'riot3' => 'https://cdn.bootcss.com/riot/3.7.3/riot+compiler.min.js',
+        'bootstrap4' => [
+            'https://cdn.bootcss.com/bootstrap/4.0.0-beta/css/bootstrap.min.css',
+            'https://cdn.bootcss.com/bootstrap/4.0.0-beta/js/bootstrap.min.js',
+        ]
     ],
-
-    // common services
-    'services'         => [
-        /**
-         * basic service
-         */
-        'logger' => [
-            'class'        => \Qin\Log\FileLogger::class,
-            'name'         => 'app',
-            'logFile'      => '@tmp/logs/application.log',
-            'basePath'     => '@tmp/logs',
-            'level'        => \Qin\Log\FileLogger::DEBUG,
-            'splitType'    => 1,
-            'bufferSize'   => 1000, // 1000,
-            'pathResolver' => 'alias',
-        ],
-
-        'language' => [
-            'class'     => \Toolkit\Collection\Language::class,
-            'lang'      => 'zh-CN',
-            'allowed'   => ['en', 'zh-CN'],
-            'basePath'  => dirname(__DIR__) . '/res/languages',
-            'langFiles' => [
-                'response.php',
-            ],
-        ],
-
-        'pinyin' => [
-            'class' => \Overtrue\Pinyin\Pinyin::class,
-            //[ \Overtrue\Pinyin\MemoryFileDictLoader::class ],
-        ],
-        'db'     => [
-            'class' => \Inhere\Library\Components\DatabaseClient::class,
-            [
-                [
-                    'debug'       => 1,
-                    'user'        => 'root',
-                    'password'    => 'root',
-                    'database'    => 'art_fonts',
-                    'tablePrefix' => 'af_',
-                ],
-            ],
-        ],
-        'cache'  => [
-            'class' => \phpFastCache\Helper\Psr16Adapter::class,
-            [
-                'files',
-                [
-                    'path'        => alias('@tmp/caches'),
-                    'securityKey' => 's6df89rtdlw',
-                ]
-            ]
-        ],
-    ]
 ];

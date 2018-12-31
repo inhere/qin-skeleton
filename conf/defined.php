@@ -8,7 +8,7 @@ define('BASE_PATH',  dirname(__DIR__));
 define('APP_PATH',  BASE_PATH . '/app');
 
 /** Env list */
-define('APP_PDT', 'pdt');
+define('APP_PDT', 'prod');
 define('APP_PRE', 'pre');
 define('APP_TEST', 'test');
 define('APP_DEV', 'dev');
@@ -23,7 +23,6 @@ define('APP_START_MEMORY', memory_get_usage());
 define('HOSTNAME', explode('.', gethostname())[0]);
 
 // Env Detector settings
-
 define('HOST2ENV', [
     // host keywords => env name
     'InhereMac' => 'dev',

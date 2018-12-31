@@ -9,8 +9,8 @@
 
 define('RUN_MODE',  'cli');
 
-require dirname(__DIR__) . '/vendor/autoload.php';
-include dirname(__DIR__) . '/conf/defined.php';
+require __DIR__ . '/vendor/autoload.php';
+include __DIR__ . '/conf/defined.php';
 
 // boot
 $app = \App\Bootstrap::boot();
@@ -20,6 +20,6 @@ if (IN_UNIT_TESTING) {
   return $app;
 }
 
-require dirname(__DIR__) . '/app/Console/routes.php';
+require __DIR__ . '/app/Console/routes.php';
 
 $app->run();

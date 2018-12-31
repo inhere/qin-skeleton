@@ -18,6 +18,7 @@ return [
     'error' => [
         'class' => ErrorHandler::class,
     ],
+
     'log' => [
         'name' => 'server',
         'file' => BASE_PATH . '/user/tmp/logs/server/server.log',
