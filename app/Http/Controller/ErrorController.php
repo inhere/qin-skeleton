@@ -8,7 +8,7 @@
 
 namespace App\Http\Controller;
 
-use Mco\Http\HttpController;
+use Qin\Http\HttpController;
 
 /**
  * class ErrorController

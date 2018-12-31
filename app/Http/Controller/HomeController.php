@@ -9,8 +9,8 @@
 namespace App\Http\Controller;
 
 use Inhere\Library\Utils\LiteLogger;
-use Mco\Helper\Respond;
-use Mco\Http\HttpController;
+use Qin\Helper\Respond;
+use Qin\Http\HttpController;
 
 /**
  * class HomeController
@@ -39,13 +39,13 @@ class HomeController extends HttpController
     {
         $content = 'hello, welcome!! this is ' . __METHOD__;
 
-        d(\Mco::get('logger'));
+        d(\Qin::get('logger'));
 
-        \Mco::get('logger')->info('a message test');
-        \Mco::get('logger')->notice('a notice test');
-        \Mco::get('logger')->flush();
+        \Qin::get('logger')->info('a message test');
+        \Qin::get('logger')->notice('a notice test');
+        \Qin::get('logger')->flush();
 
-        de(\Mco::get('logger'));
+        de(\Qin::get('logger'));
 
         return $this->renderContent($content);
     }
@@ -58,7 +58,7 @@ class HomeController extends HttpController
     public function routes($ctx)
     {
         /** @var \Inhere\Route\Router $router */
-        $router = \Mco::$di->get('router');
+        $router = \Qin::$di->get('router');
 
         // Setting a header
         $ctx->res->setHeader('Content-Type', 'application/json');
@@ -105,7 +105,7 @@ class HomeController extends HttpController
      */
     public function json()
     {
-        \Mco::trace('test info');
+        \Qin::trace('test info');
 
         Respond::rawJson([
             'code' => 0,

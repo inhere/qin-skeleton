@@ -42,7 +42,7 @@ return Arr::merge(require __DIR__ . '/config.php', [
             ],
         ],
         'routeDispatcher' => [
-            'class' => \Mco\Http\RouteDispatcher::class,
+            'class' => \Qin\Http\RouteDispatcher::class,
             'outputBuffering' => false,
             'config' => [
                 'dynamicAction' => true,

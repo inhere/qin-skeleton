@@ -1,9 +1,9 @@
 #!/usr/bin/env php
 <?php
 /**
- * entry file for CLI
+ * entry file for qin app
  *
- * @var Mco\Console\App $app
+ * @var Qin\Console\App $app
  * @var Toolkit\DI\Container $di
  */
 

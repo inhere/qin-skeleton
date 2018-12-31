@@ -12,7 +12,7 @@ namespace App\Helper;
  * Class ResCode
  * @package App\Helper
  */
-class ResCode extends \Mco\Helper\ResCode
+class ResCode extends \Qin\Helper\ResCode
 {
     // ...
 }

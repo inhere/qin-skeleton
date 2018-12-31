@@ -31,7 +31,7 @@ class TestCommand extends Command
         $output->write('hello, this in ' . __METHOD__);
 
         //AnsiCode::make()->screen(AnsiCode::CLEAR);
-        // $ret = \Mco::get('db')->fetchAll('show tables');
+        // $ret = \Qin::get('db')->fetchAll('show tables');
 
         $data = array( // row #3
             'cate_ID' => 5,

@@ -9,7 +9,7 @@
 namespace App\Http\Controller;
 
 use Inhere\Library\Utils\LiteLogger;
-use Mco\Http\HttpController;
+use Qin\Http\HttpController;
 
 /**
  * class HomeController
@@ -78,15 +78,15 @@ class TestController extends HttpController
 
     public function log()
     {
-        //de(\Mco::get('config')->all());
+        //de(\Qin::get('config')->all());
 
-//        d(\Mco::get('logger'));
+//        d(\Qin::get('logger'));
 
-        \Mco::get('logger')->info('a message test');
-        \Mco::get('logger')->notice('a notice test');
-        \Mco::get('logger')->flush();
+        \Qin::get('logger')->info('a message test');
+        \Qin::get('logger')->notice('a notice test');
+        \Qin::get('logger')->flush();
 
-        de(\Mco::get('logger'));
+        de(\Qin::get('logger'));
     }
 
     public function log1()
@@ -109,14 +109,14 @@ class TestController extends HttpController
 
     public function config()
     {
-        de(\Mco::get('config')->all());
+        de(\Qin::get('config')->all());
     }
 
     public function json()
     {
-        \Mco::trace('test info');
+        \Qin::trace('test info');
 
-        Mco::$app->output->json([
+        Qin::$app->output->json([
             'code' => 0,
             'msg' => 'successful!',
             'data' => [

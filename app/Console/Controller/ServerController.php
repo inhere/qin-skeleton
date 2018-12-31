@@ -9,7 +9,7 @@
 namespace App\Console\Controller;
 
 use Inhere\Console\Controller;
-use Mco\Http\App;
+use Qin\Http\App;
 use Swokit\Http\Server\HttpServer;
 use Swokit\Server\KitServer;
 

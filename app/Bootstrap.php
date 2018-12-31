@@ -13,10 +13,10 @@ use App\Provider\CommonServiceProvider;
 use App\Provider\ConsoleServiceProvider;
 use App\Provider\WebServiceProvider;
 use Inhere\Route\Router;
-use Mco\Component\EnvDetector;
+use Qin\Component\EnvDetector;
 use Toolkit\PhpUtil\PhpDotEnv;
-use Mco\Http\App as WebApp;
-use Mco\Console\App as CliApp;
+use Qin\Http\App as WebApp;
+use Qin\Console\App as CliApp;
 
 /**
  * Class Bootstrap
@@ -25,7 +25,7 @@ use Mco\Console\App as CliApp;
 class Bootstrap
 {
     /**
-     * @return \Mco\Http\App|\Mco\Console\App
+     * @return \Qin\Http\App|\Qin\Console\App
      */
     public static function boot()
     {
@@ -101,7 +101,7 @@ class Bootstrap
     }
 
     /**
-     * @return \Mco\Http\App|\Mco\Console\App
+     * @return \Qin\Http\App|\Qin\Console\App
      * @throws \Toolkit\DI\Exception\DependencyResolutionException
      * @throws \InvalidArgumentException
      */

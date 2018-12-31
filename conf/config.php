@@ -3,7 +3,7 @@
  * the common config
  */
 return [
-    'name'    => env('APP_NAME', 'My App'),
+    'name'     => env('APP_NAME', 'My App'),
     'debug'    => env('APP_DEBUG', false),
     'env'      => env('APP_ENV', 'pdt'),
     'charset'  => 'UTF-8',
@@ -13,8 +13,8 @@ return [
 
     'errorRender' => [
         'displayErrorDetails' => true,
-        'rootPath' => BASE_PATH,
-        'hideRootPath' => true,
+        'rootPath'            => BASE_PATH,
+        'hideRootPath'        => true,
     ],
 
     'serviceProviders' => [
@@ -22,28 +22,26 @@ return [
     ],
 
     // common services
-    'services' => [
-
+    'services'         => [
         /**
          * basic service
          */
-
         'logger' => [
-            'class'       => \Mco\Log\FileLogger::class,
+            'class'        => \Qin\Log\FileLogger::class,
             'name'         => 'app',
             'logFile'      => '@tmp/logs/application.log',
             'basePath'     => '@tmp/logs',
-            'level'        => \Mco\Log\FileLogger::DEBUG,
+            'level'        => \Qin\Log\FileLogger::DEBUG,
             'splitType'    => 1,
             'bufferSize'   => 1000, // 1000,
             'pathResolver' => 'alias',
         ],
 
-        'language'   => [
-            'class' => \Toolkit\Collection\Language::class,
+        'language' => [
+            'class'     => \Toolkit\Collection\Language::class,
             'lang'      => 'zh-CN',
-            'langs'     => ['en', 'zh-CN'],
-            'basePath'  => dirname(__DIR__).'/res/languages',
+            'allowed'   => ['en', 'zh-CN'],
+            'basePath'  => dirname(__DIR__) . '/res/languages',
             'langFiles' => [
                 'response.php',
             ],
@@ -65,12 +63,12 @@ return [
                 ],
             ],
         ],
-        'cache' => [
+        'cache'  => [
             'class' => \phpFastCache\Helper\Psr16Adapter::class,
             [
                 'files',
                 [
-                    'path' => alias('@tmp/caches'),
+                    'path'        => alias('@tmp/caches'),
                     'securityKey' => 's6df89rtdlw',
                 ]
             ]

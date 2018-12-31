@@ -37,7 +37,7 @@ define('DOMAIN2ENV', [
     'dev' => 'dev'
 ]);
 
-Mco::setAliases([
+Qin::setAliases([
     '@root' => BASE_PATH,
     '@app' => BASE_PATH . '/app',
     '@bin' => BASE_PATH . '/bin',

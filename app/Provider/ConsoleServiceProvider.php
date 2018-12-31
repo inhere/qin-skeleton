@@ -9,7 +9,7 @@
 namespace App\Provider;
 
 use App\Listener\AppListener;
-use Mco\Console\App;
+use Qin\Console\App;
 use Toolkit\Collection\Configuration;
 use Toolkit\DI\Container;
 use Toolkit\DI\ServiceProviderInterface;
