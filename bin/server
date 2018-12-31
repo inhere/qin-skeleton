@@ -25,15 +25,3 @@ try {
     $message, $e->getFile(), $e->getLine(), $e->getTraceAsString()
   );
 }
-
-/*
-$app = new Application();
-
-// register
-$app->controller('server', ServerController::class);
-
-// run
-$status = $app->runAction('server', $app->getInput()->getCommand(), true, true);
-
-$app->stop($status);
-*/

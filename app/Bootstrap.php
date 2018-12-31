@@ -44,8 +44,8 @@ class Bootstrap
         EnvDetector::setHost2env(HOST2ENV);
         EnvDetector::setDomain2env(DOMAIN2ENV);
 
-        // define current is IN_CODE_TESTING.
-        \defined('IN_CODE_TESTING') || \define('IN_CODE_TESTING', false);
+        // define current is IN_UNIT_TESTING.
+        \defined('IN_UNIT_TESTING') || \define('IN_UNIT_TESTING', false);
 
         if (RUN_MODE === 'web') {
             // Detect environment: allow change env by HOSTNAME OR HTTP_HOST

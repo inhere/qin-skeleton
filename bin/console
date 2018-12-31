@@ -16,7 +16,7 @@ include dirname(__DIR__) . '/conf/defined.php';
 $app = \App\Bootstrap::boot();
 
 // in the unit testing.
-if (IN_CODE_TESTING) {
+if (IN_UNIT_TESTING) {
   return $app;
 }
 
