@@ -46,7 +46,7 @@ $app->addCommand('make', function (\Inhere\Console\IO\Input $input, \Inhere\Cons
     }
 
     $output->write("RUN > <comment>$cmd</comment>");
-    list($code, $out, $err) = \Toolkit\Sys\Sys::run($cmd, $info['cwd']);
+    [$code, $out, $err] = \Toolkit\Sys\Sys::run($cmd, $info['cwd']);
 
     if ($code) {
         $output->liteWarning('Running failure!' . ($err ? "Error: $err" : ''));

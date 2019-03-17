@@ -18,7 +18,7 @@ class RestController
     /**
      * @Route("@")
      */
-    public function index()
+    public function index(): void
     {
         echo __METHOD__ . PHP_EOL;
     }
@@ -26,7 +26,7 @@ class RestController
     /**
      * @Route("/{id}")
      */
-    public function view()
+    public function view(): void
     {
         echo __METHOD__ . PHP_EOL;
     }
@@ -34,22 +34,22 @@ class RestController
     /**
      * @Route("@", method="POST")
      */
-    public function create()
+    public function create(): void
     {
         echo __METHOD__ . PHP_EOL;
     }
 
-    public function update()
+    public function update(): void
     {
         echo __METHOD__ . PHP_EOL;
     }
 
-    public function patch()
+    public function patch(): void
     {
         echo __METHOD__ . PHP_EOL;
     }
 
-    public function delete()
+    public function delete(): void
     {
         echo __METHOD__ . PHP_EOL;
     }

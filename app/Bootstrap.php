@@ -126,7 +126,7 @@ class Bootstrap
     /**
      * @param Router $router
      */
-    private function loadWebRoutes(Router $router)
+    private function loadWebRoutes(Router $router): void
     {
         include BASE_PATH . '/app/Http/routes.php';
     }

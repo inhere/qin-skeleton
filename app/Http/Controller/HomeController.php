@@ -23,7 +23,7 @@ class HomeController extends HttpController
      * Route(route="/*", method="GET")
      * @return string
      */
-    public function index()
+    public function index(): string
     {
         echo 'OOO';
         //\var_dump(__METHOD__);
@@ -35,7 +35,7 @@ class HomeController extends HttpController
      * @return string
      * @throws \Throwable
      */
-    public function log()
+    public function log(): string
     {
         $content = 'hello, welcome!! this is ' . __METHOD__;
 
@@ -55,7 +55,7 @@ class HomeController extends HttpController
      * @param $ctx
      * @return \Psr\Http\Message\ResponseInterface
      */
-    public function routes($ctx)
+    public function routes($ctx): \Psr\Http\Message\ResponseInterface
     {
         /** @var \Inhere\Route\Router $router */
         $router = \Qin::$di->get('router');
@@ -74,7 +74,7 @@ class HomeController extends HttpController
      * @Route()
      * @throws \Inhere\Exceptions\FileSystemException
      */
-    public function test()
+    public function test(): void
     {
 
         $lgr = LiteLogger::make([
@@ -95,7 +95,7 @@ class HomeController extends HttpController
     /**
      * @Route()
      */
-    public function config()
+    public function config(): void
     {
         echo 'ddd';
     }
@@ -103,7 +103,7 @@ class HomeController extends HttpController
     /**
      * @Route()
      */
-    public function json()
+    public function json(): void
     {
         \Qin::trace('test info');
 

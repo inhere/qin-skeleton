@@ -61,22 +61,22 @@ class TestController extends HttpController
         return $this->renderContent($content);
     }
 
-    public function err1()
+    public function err1(): void
     {
         throw new \TypeError('test Type Error');
     }
 
-    public function err2()
+    public function err2(): void
     {
         call_not_exists_func();
     }
 
-    public function exp()
+    public function exp(): void
     {
         throw new \RuntimeException('test Exception');
     }
 
-    public function log()
+    public function log(): void
     {
         //de(\Qin::get('config')->all());
 
@@ -89,7 +89,7 @@ class TestController extends HttpController
         de(\Qin::get('logger'));
     }
 
-    public function log1()
+    public function log1(): void
     {
 
         $lgr = LiteLogger::make([
@@ -107,12 +107,12 @@ class TestController extends HttpController
         echo 'hello';
     }
 
-    public function config()
+    public function config(): void
     {
         de(\Qin::get('config')->all());
     }
 
-    public function json()
+    public function json(): void
     {
         \Qin::trace('test info');
 

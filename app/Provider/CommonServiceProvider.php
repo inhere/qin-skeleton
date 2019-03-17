@@ -42,7 +42,7 @@ class CommonServiceProvider implements ServiceProviderInterface
      * @param Container $di
      * @throws \Toolkit\DI\Exception\DependencyResolutionException
      */
-    private function registerDbServices(Container $di)
+    private function registerDbServices(Container $di): void
     {
         // MySQL: Database connection
         $di->set('db.master', function (Container $di) {
@@ -85,7 +85,7 @@ class CommonServiceProvider implements ServiceProviderInterface
      * @param Container $di
      * @throws \Toolkit\DI\Exception\DependencyResolutionException
      */
-    private function registerCacheServices(Container $di)
+    private function registerCacheServices(Container $di): void
     {
         $di->set('memcache', function (Container $di) {
             $config = $di->get('config')->get('memcache');

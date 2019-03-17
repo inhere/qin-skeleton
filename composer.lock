@@ -60,17 +60,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-console.git",
-                "reference": "f162bae51b812d78a6b178a4959813c08f240500"
+                "reference": "334a9c6ef29449015a04f33a5751fac68a551a18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/inhere/php-console/zipball/f162bae51b812d78a6b178a4959813c08f240500",
-                "reference": "f162bae51b812d78a6b178a4959813c08f240500",
+                "url": "https://api.github.com/repos/inhere/php-console/zipball/334a9c6ef29449015a04f33a5751fac68a551a18",
+                "reference": "334a9c6ef29449015a04f33a5751fac68a551a18",
                 "shasum": ""
             },
             "require": {
-                "php": ">7.0.0",
+                "php": ">7.1.0",
                 "toolkit/cli-utils": "~1.0",
+                "toolkit/php-utils": "~1.0",
+                "toolkit/str-utils": "~1.0",
                 "toolkit/sys-utils": "~1.0"
             },
             "suggest": {
@@ -99,14 +101,15 @@
             "homepage": "https://github.com/inhere/php-console",
             "keywords": [
                 "cli",
+                "color",
                 "command",
                 "command-line",
                 "console",
                 "console-application",
                 "console-color",
-                "library"
+                "phar"
             ],
-            "time": "2018-12-29T01:45:47+00:00"
+            "time": "2019-02-04T01:32:50+00:00"
         },
         {
             "name": "inhere/database",
@@ -155,20 +158,20 @@
         },
         {
             "name": "inhere/event",
-            "version": "v1.1.1",
+            "version": "v1.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-event-manager.git",
-                "reference": "e224a5ef5cdae70c2fd7cc5a7f3beeb4b4a380b1"
+                "reference": "a2f937b759b53f54b610c03947784c0c993c62c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/inhere/php-event-manager/zipball/e224a5ef5cdae70c2fd7cc5a7f3beeb4b4a380b1",
-                "reference": "e224a5ef5cdae70c2fd7cc5a7f3beeb4b4a380b1",
+                "url": "https://api.github.com/repos/inhere/php-event-manager/zipball/a2f937b759b53f54b610c03947784c0c993c62c9",
+                "reference": "a2f937b759b53f54b610c03947784c0c993c62c9",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0.0"
+                "php": ">7.1.0"
             },
             "suggest": {
                 "inhere/console": "a lightweight php console application library.",
@@ -198,7 +201,7 @@
                 "event-dispatcher",
                 "library"
             ],
-            "time": "2017-12-29T15:25:06+00:00"
+            "time": "2019-01-18T17:01:50+00:00"
         },
         {
             "name": "inhere/library",
@@ -313,19 +316,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-validate.git",
-                "reference": "7524c8e9f49a1477b358d12b61a7793aaddc92bb"
+                "reference": "244b8097fb9202abe729a9937336ba83f4648c77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/inhere/php-validate/zipball/7524c8e9f49a1477b358d12b61a7793aaddc92bb",
-                "reference": "7524c8e9f49a1477b358d12b61a7793aaddc92bb",
+                "url": "https://api.github.com/repos/inhere/php-validate/zipball/244b8097fb9202abe729a9937336ba83f4648c77",
+                "reference": "244b8097fb9202abe729a9937336ba83f4648c77",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0.0"
-            },
-            "suggest": {
-                "inhere/simple-print-tool": "Very lightweight data printing tools"
+                "php": ">7.0.0"
             },
             "type": "library",
             "autoload": {
@@ -344,13 +344,16 @@
                     "homepage": "http://www.yzone.net/"
                 }
             ],
-            "description": "a simple validate, filter library of the php",
-            "homepage": "http://github.com/inhere/php-validate",
+            "description": "an simple validate, filter library of the php",
+            "homepage": "https://github.com/inhere/php-validate",
             "keywords": [
+                "form-validate",
                 "library",
-                "validate"
+                "php-library",
+                "validate",
+                "validation"
             ],
-            "time": "2018-09-18T03:34:40+00:00"
+            "time": "2019-01-31T02:41:15+00:00"
         },
         {
             "name": "inhere/process",
@@ -398,12 +401,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/inhere/php-srouter.git",
-                "reference": "5645e1588b516926e3817450b508397f8e7955f1"
+                "reference": "878e3b1f654120e639a50df03cceee6c61be98ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/inhere/php-srouter/zipball/5645e1588b516926e3817450b508397f8e7955f1",
-                "reference": "5645e1588b516926e3817450b508397f8e7955f1",
+                "url": "https://api.github.com/repos/inhere/php-srouter/zipball/878e3b1f654120e639a50df03cceee6c61be98ce",
+                "reference": "878e3b1f654120e639a50df03cceee6c61be98ce",
                 "shasum": ""
             },
             "require": {
@@ -440,7 +443,7 @@
                 "route",
                 "router"
             ],
-            "time": "2018-12-29T01:55:59+00:00"
+            "time": "2019-02-01T16:47:49+00:00"
         },
         {
             "name": "mcophp/mco",
@@ -679,20 +682,20 @@
         },
         {
             "name": "php-comp/http-message",
-            "version": "v1.3.1",
+            "version": "v1.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-comp/http-message.git",
-                "reference": "351856b48981ed843c8f24f17cdaf46846049ff5"
+                "reference": "0167f75e3c853049189463011ecedfc611357945"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-comp/http-message/zipball/351856b48981ed843c8f24f17cdaf46846049ff5",
-                "reference": "351856b48981ed843c8f24f17cdaf46846049ff5",
+                "url": "https://api.github.com/repos/php-comp/http-message/zipball/0167f75e3c853049189463011ecedfc611357945",
+                "reference": "0167f75e3c853049189463011ecedfc611357945",
                 "shasum": ""
             },
             "require": {
-                "php": ">7.0.0",
+                "php": ">7.1.0",
                 "psr/http-message": "^1.0"
             },
             "suggest": {
@@ -724,7 +727,7 @@
                 "psr7",
                 "tool"
             ],
-            "time": "2018-11-12T05:08:58+00:00"
+            "time": "2019-02-04T08:21:11+00:00"
         },
         {
             "name": "php-comp/lite-activerecord",
@@ -1250,16 +1253,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v3.4.20",
+            "version": "v3.4.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "abb46b909dd6ba0b50e10d4c10ffe6ee96dd70f2"
+                "reference": "009f8dda80930e89e8344a4e310b08f9ff07dd2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/abb46b909dd6ba0b50e10d4c10ffe6ee96dd70f2",
-                "reference": "abb46b909dd6ba0b50e10d4c10ffe6ee96dd70f2",
+                "url": "https://api.github.com/repos/symfony/process/zipball/009f8dda80930e89e8344a4e310b08f9ff07dd2e",
+                "reference": "009f8dda80930e89e8344a4e310b08f9ff07dd2e",
                 "shasum": ""
             },
             "require": {
@@ -1295,7 +1298,7 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "https://symfony.com",
-            "time": "2018-11-20T16:10:26+00:00"
+            "time": "2019-01-16T13:27:11+00:00"
         },
         {
             "name": "text/template",
@@ -1453,16 +1456,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-toolkit/toolkit.git",
-                "reference": "6311a984626197754347d7bcbf2768f8b9732fd4"
+                "reference": "808760c8f0213911b48bfbd5541eac443a718928"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-toolkit/toolkit/zipball/6311a984626197754347d7bcbf2768f8b9732fd4",
-                "reference": "6311a984626197754347d7bcbf2768f8b9732fd4",
+                "url": "https://api.github.com/repos/php-toolkit/toolkit/zipball/808760c8f0213911b48bfbd5541eac443a718928",
+                "reference": "808760c8f0213911b48bfbd5541eac443a718928",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.0",
+                "php": ">7.1.0",
                 "psr/container": "^1.0"
             },
             "replace": {
@@ -1484,8 +1487,7 @@
             },
             "suggest": {
                 "inhere/console": "a lightweight php console application library.",
-                "inhere/php-validate": "Very lightweight data validate tool",
-                "inhere/simple-print-tool": "Very lightweight data printing tools"
+                "inhere/php-validate": "Very lightweight data validate tool"
             },
             "type": "library",
             "autoload": {
@@ -1525,7 +1527,7 @@
                 "php",
                 "tools"
             ],
-            "time": "2018-12-26T15:45:59+00:00"
+            "time": "2019-02-04T01:24:54+00:00"
         },
         {
             "name": "toolkit/toolkit-plus",

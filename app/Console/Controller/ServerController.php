@@ -25,7 +25,7 @@ class ServerController extends Controller
     /**
      * @return KitServer
      */
-    protected function createServer()
+    protected function createServer(): KitServer
     {
         // require BASE_PATH . '/src/boot/server.php';
         $server = new HttpServer();
@@ -44,7 +44,7 @@ class ServerController extends Controller
      *  -H,--host  The server host address. e.g 127.0.0.1
      *  -p,--port  The server host address. e.g 5577
      */
-    public function devCommand()
+    public function devCommand(): void
     {
         if (!$server = $this->getOpt('S')) {
             $server = $this->getSameOpt(['H', 'host'], '127.0.0.1');
@@ -79,7 +79,7 @@ class ServerController extends Controller
      *  -d, --daemon  run app server on the background
      * @throws \Throwable
      */
-    public function startCommand()
+    public function startCommand(): void
     {
         $daemon = $this->getSameOpt(['d', 'daemon']);
 
@@ -92,7 +92,7 @@ class ServerController extends Controller
      *  -d, --daemon  run app server on the background
      * @throws \Throwable
      */
-    public function restartCommand()
+    public function restartCommand(): void
     {
         $daemon = $this->input->getSameOpt(['d', 'daemon']);
 
@@ -104,7 +104,7 @@ class ServerController extends Controller
      * @options
      *  --task  only reload task worker when exec reload command
      */
-    public function reloadCommand()
+    public function reloadCommand(): void
     {
         $onlyTask = $this->input->getSameOpt(['task']);
 
@@ -114,7 +114,7 @@ class ServerController extends Controller
     /**
      * stop the swoole application server
      */
-    public function stopCommand()
+    public function stopCommand(): void
     {
         $this->createServer()->stop();
     }
